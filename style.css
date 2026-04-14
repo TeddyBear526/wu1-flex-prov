@@ -2,7 +2,9 @@ body{
     background: white;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
     margin: 0;
+    padding: 0;
 }
 a{
     color: inherit;
@@ -21,11 +23,13 @@ nav{
     font-size: 2rem;
     border-top: solid;
     border-color: black;
+    padding-top:0.6rem;
+    padding-bottom: 0.6rem;
 }
 .links{
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
+    flex-direction: column;
     font-size: 1rem;
     list-style-type: none;
     padding: 0;
@@ -40,9 +44,10 @@ main{
     border-top: solid;
     border-bottom: solid;
     border-color: black;
+    min-height: 86.2vh;
 }
 header{
-    background:aqua;
+    background-color:lightsteelblue;
     text-align:center;
     font-size: 1.5rem;
     border-bottom: solid;
@@ -54,7 +59,7 @@ h1{
 }
 .button{
     display: inline-block;
-    background-color:cornflowerblue;
+    background-color:slateblue;
     padding: 14px 25px;
     text-align: center;
     border: solid;
@@ -66,16 +71,32 @@ h1{
 section{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
 }
 .cards-list{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+    .cards-list{
+        flex-direction: column;
+    }
 }
 
 .card{
-    background-color: lightgray;
+    background:#f1f1f1;
     border: solid;
     border-color: black;
     border-radius: 6%;
+    flex-basis: 24rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
+footer{
+    background-color:dimgray;
+    color: white;
+    text-align: center;
+}
