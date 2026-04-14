@@ -2,7 +2,6 @@ body{
     background: white;
     display: flex;
     flex-direction: column;
-    padding: 0;
     margin: 0;
 }
 a{
@@ -16,10 +15,31 @@ nav{
     justify-content: space-around;
     color:black;
     font-size: 2rem;
+    border-top: solid;
+    border-color: black;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
+main{
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: black;
 }
 header{
     background:aqua;
+    text-align: center;
 }
 
 section{
